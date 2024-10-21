@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML</title>
+    <link rel="shortcut icon" href="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            margin: 40px 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tag text</h1>
+    <table>
+        <tr>
+            <th>
+                Tag
+            </th>
+            <th>
+                Fungsi
+            </th>
+            <th>
+                contoh
+            </th>
+            <th>
+                Hasil
+            </th>
+        </tr>
+        <tr>
+            <td>
+                &lt;h1&gt;
+            </td>
+            <td>
+                untuk judul (h1, h2, h3, sampai h6)
+            </td>
+            <td>
+                <code>
+                    &lt;h1&gt;hello world&lt;/h1&gt;
+                </code>
+            </td>
+            <td>
+                <h1>hello world</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;p&gt;
+            </td>
+            <td>
+                sebagai paragraf
+            </td>
+            <td>
+                <code>
+                    &lt;p&gt;hello world&lt;/p&gt;
+                </code>
+            </td>
+            <td>
+                <p>hello world</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;i&gt;
+            </td>
+            <td>
+                italic / garis miring
+            </td>
+            <td>
+                <code>
+                    &lt;i&gt;hello&lt;/i&gt;
+                </code>
+            </td>
+            <td>
+                <i>hello</i>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;b&gt;
+            </td>
+            <td>
+                bold / tebal
+            </td>
+            <td>
+                <code>
+                    &lt;b&gt;hello&lt;/b&gt;
+                </code>
+            </td>
+            <td>
+                <b>hello</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;strong&gt;
+            </td>
+            <td>
+                bold / tebal
+            </td>
+            <td>
+                <code>
+                    &lt;strong&gt;hello&lt;/strong&gt;
+                </code>
+            </td>
+            <td>
+                <strong>hello</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;del&gt;
+            </td>
+            <td>
+                text coret
+            </td>
+            <td>
+                <code>
+                    &lt;del&gt;hello world&lt;/del&gt;
+                </code>
+            </td>
+            <td>
+                <del>hello world</del>
+            </td>
+        </tr>
+    </table>
+
+    <h1>Tag pembungkus</h1>
+    <table>
+        <tr>
+            <th>
+                Tag
+            </th>
+            <th>
+                Fungsi
+            </th>
+            <th>
+                contoh
+            </th>
+            <th>
+                Hasil
+            </th>
+        </tr>
+        <tr>
+            <td>
+                &lt;form&gt;
+            </td>
+            <td>
+                untuk membungkus element form
+            </td>
+            <td>
+                <code>
+                    &lt;form&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;input type=&quot;text&quot; placeholder=&quot;username&quot;&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;input type=&quot;password&quot; placeholder=&quot;password&quot;&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;input type=&quot;submit&quot; value=&quot;login&quot;&gt;
+                        <br>
+                    &lt;/form&gt;
+
+                </code>
+            </td>
+            <td>
+                <form action="">
+                    <input type="text" placeholder="username">
+                    <input type="password" placeholder="password">
+                    <input type="submit" value="login">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;div&gt;
+            </td>
+            <td>
+                untuk membungkus element lainnya
+            </td>
+            <td>
+                <code>
+                    &lt;div&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;h1&gt;hello world&lt;/h1&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+                    <br>
+                    &lt;/div&gt;
+                </code>
+            </td>
+            <td>
+                <h1>hello world</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;span&gt;
+            </td>
+            <td>
+                untuk membungkus element text lainnya
+            </td>
+            <td>
+                <code>
+                    &lt;span&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;i&gt;hello world&lt;/i&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;b&gt;Lorem ipsum dolor sit amet.&lt;/b&gt;
+                    <br>
+                    &lt;/span&gt;
+                </code>
+            </td>
+            <td>
+                <i>hello world</i>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;center&gt;
+            </td>
+            <td>
+                untuk membungkus element dengan posisi ditengah
+            </td>
+            <td>
+                <code>
+                    &lt;center&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;i&gt;hello world&lt;/i&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;b&gt;Lorem ipsum dolor sit amet.&lt;/b&gt;
+                    <br>
+                    &lt;/center&gt;
+                </code>
+            </td>
+            <td>
+                <center>
+                    <i>hello world</i>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </center>
+            </td>
+        </tr>
+        
+    </table>
+
+    <h1>Tag Media</h1>
+    <table>
+        <tr>
+            <th>
+                Tag
+            </th>
+            <th>
+                Fungsi
+            </th>
+            <th>
+                contoh
+            </th>
+            <th>
+                Hasil
+            </th>
+        </tr>
+        <tr>
+            <td>
+                &lt;img&gt;
+            </td>
+            <td>
+                untuk menampilkan gambar
+            </td>
+            <td>
+                <code>
+                    &lt;img src="gambar1.png"&gt;
+                </code>
+            </td>
+            <td>
+                <img width="100px" src="https://imgs.search.brave.com/OPwZ94ZftuCHcz6xDu-fF_rrGtCseZ-vMp-y6lRgpB4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2VsYXNhci5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MDQvR2FtYmFyLUhl/d2FuLTEuanBn" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;video&gt;
+            </td>
+            <td>
+                untuk menampilkan video
+            </td>
+            <td>
+                <code>
+                    &lt;video controls&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;source src="video1.mp4" &gt;
+                    &lt;/source&gt;
+                    <br>
+                    &lt;/video&gt;
+                </code>
+            </td>
+            <td>
+                <video controls>
+                    <source src="mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML video.
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;audio&gt;
+            </td>
+            <td>
+                untuk menampilkan audio
+            </td>
+            <td>
+                <code>
+                    &lt;audio controls&gt;
+                    <br>
+                    &nbsp;&nbsp;&lt;source src="audio1.mp4" &gt;
+                    &lt;/source&gt;
+                    <br>
+                    &lt;/audio&gt;
+                </code>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="mov_bbb.mp4" type="audio/mp4">
+                    <source src="mov_bbb.ogg" type="audio/ogg">
+                    Your browser does not support HTML audio.
+                </audio>
+            </td>
+        </tr>
+    </table>
+
+
+    <h1>Tag Form</h1>
+    <table>
+        <tr>
+            <th>
+                Tag
+            </th>
+            <th>
+                Fungsi
+            </th>
+            <th>
+                contoh
+            </th>
+            <th>
+                Hasil
+            </th>
+        </tr>
+        <tr>
+            <td>
+                &lt;input&gt;
+            </td>
+            <td>
+                untuk membuat kolom yang bisa diisi
+            </td>
+            <td>
+                <code>
+                    &lt;input type="text" placeholder="isi disini"&gt;
+                </code>
+            </td>
+            <td>
+                <input type="text" placeholder="isi disini">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;input&gt;
+            </td>
+            <td>
+                untuk membuat kolom yang bisa diisi
+            </td>
+            <td>
+                <code>
+                    &lt;input type="password" placeholder="isi disini"&gt;
+                </code>
+            </td>
+            <td>
+                <input type="password" placeholder="isi disini" value="123">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;input&gt;
+            </td>
+            <td>
+                untuk membuat kolom yang bisa diisi
+            </td>
+            <td>
+                <code>
+                    &lt;input type="checkbox" placeholder="isi disini"&gt;
+                </code>
+            </td>
+            <td>
+                <input type="checkbox" placeholder="isi disini">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;input&gt;
+            </td>
+            <td>
+                untuk membuat kolom yang bisa diisi
+            </td>
+            <td>
+                <code>
+                    &lt;input type="date" placeholder="isi disini"&gt;
+                </code>
+            </td>
+            <td>
+                <input type="date" placeholder="isi disini">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;input&gt;
+            </td>
+            <td>
+                untuk membuat kolom yang bisa diisi
+            </td>
+            <td>
+                <code>
+                    &lt;input type="radio" placeholder="isi disini"&gt;
+                </code>
+            </td>
+            <td>
+                <input type="radio" placeholder="isi disini">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;input&gt;
+            </td>
+            <td>
+                untuk membuat kolom yang bisa diisi
+            </td>
+            <td>
+                <code>
+                    &lt;input type="submit" value="tombol kirim"&gt;
+                </code>
+            </td>
+            <td>
+                <input type="submit" value="tombol kirim">
+            </td>
+        </tr>
+    </table>
+
+    <h1>Tag Lainnya</h1>
+    <table>
+        <tr>
+            <th>
+                Tag
+            </th>
+            <th>
+                Fungsi
+            </th>
+            <th>
+                contoh
+            </th>
+            <th>
+                Hasil
+            </th>
+        </tr>
+        <tr>
+            <td>
+                &lt;ol&gt;
+            </td>
+            <td>
+                untuk membuat list ordered / angka
+            </td>
+            <td>
+                <code>
+                    &lt;ol&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;li&gt;ayam&lt;/li&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;li&gt;burung&lt;/li&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;li&gt;domba&lt;/li&gt;
+                        <br>
+                    &lt;/ol&gt;
+
+                </code>
+            </td>
+            <td>
+                <ol>
+                    <li>ayam</li>
+                    <li>burung</li>
+                    <li>domba</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;ul&gt;
+            </td>
+            <td>
+                untuk membuat list unordered / titik
+            </td>
+            <td>
+                <code>
+                    &lt;ul&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;li&gt;ayam&lt;/li&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;li&gt;burung&lt;/li&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;li&gt;domba&lt;/li&gt;
+                        <br>
+                    &lt;/ul&gt;
+
+                </code>
+            </td>
+            <td>
+                <ul>
+                    <li>ayam</li>
+                    <li>burung</li>
+                    <li>domba</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &lt;table&gt;
+            </td>
+            <td>
+                untuk membuat tabel
+            </td>
+            <td>
+                <code>
+                    &lt;table&gt;
+                    <br>
+                        &nbsp;&lt;tr&gt;
+                        <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;no&lt;/th&gt;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;nama&lt;/th&gt;
+                            <br>
+                        &nbsp;&nbsp;&lt;/tr&gt;
+                        <br>
+                        &nbsp;&nbsp;&lt;tr&gt;
+                        <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;1&lt;/td&gt;
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;alba&lt;/td&gt;
+                            <br>
+                        &nbsp;&nbsp;&lt;/tr&gt;
+                        <br>
+                    &lt;/table&gt;
+
+                </code>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th>no</th>
+                        <th>nama</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>alba</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+    <h1>Untuk lanjutan</h1>
+    <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">Bisa pelajari semantik html disini</a>
+</body>
+</html>
